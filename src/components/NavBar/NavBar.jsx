@@ -9,7 +9,7 @@ const NavBar = () => {
                     <Link to="/"><LogoMain/></Link >
                     <div>   
                     <NavLink to={`/category/Quimicos`} className={({isActive}) => isActive ? "btn btn-outline-info ActiveOption mx-2": "btn btn-outline-info Option mx-2"}>Quimicos</NavLink>
-                    <NavLink to={`/category/Material de limpieza`} className={({isActive}) => isActive ? "btn btn-outline-info ActiveOption mx-2": "btn btn-outline-info Option mx-2"}>Material de limpieza</NavLink>
+                    <NavLink to={`/category/Accesorios`} className={({isActive}) => isActive ? "btn btn-outline-info ActiveOption mx-2": "btn btn-outline-info Option mx-2"}>Material de limpieza</NavLink>
                     </div>
                     <form class="d-flex" role="search">
                         <input className="form-control me-1" type="search" placeholder="Search" aria-label="Search" />

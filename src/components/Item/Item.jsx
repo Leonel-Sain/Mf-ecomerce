@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
-const Item = ({ id, name, price, description, img, stock }) => {
-    return (
+import "./Item.css"
+const Item = ({ id, name, price, img, stock }) => {
 
+    return (
         <div className="col-lg-3 ">
-            <article className="card text-center shadow-sm mb-1 rounded-3  bg-body " style={{ height: "90%" }} >
-                <header className="card-heade" >
+            <article className="card text-center shadow-sm mb-1   bg-body " style={{ height: "90%" }} >
+                <header className=" fondoCeleste  card-heade" >
                     <h4 className="card-title mt-2"> {name}</h4>
                 </header>
                 <div className="card-body d-flex flex-column justify-content-between" style={{ height: "90%" }}>
@@ -25,3 +26,4 @@ const Item = ({ id, name, price, description, img, stock }) => {
 }
 
 export default Item
+

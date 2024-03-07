@@ -7,20 +7,22 @@ const ItemDetailContainer = () => {
     const [products, setProducts] = useState(null)
 
     const {itemId} = useParams()
-
+    console.log("parametros", itemId)
     useEffect(() => {
         getProductsById(itemId)
             .then(response => {
                 setProducts(response)
+                console.log(response);
             })
+            
             .catch(error => {
                 console.error(error)
             })
     }, [itemId])
    
     return (
-        <div className="container row row-cols-2">
-            <ItemDetail {...products}  />
+        <div className="container row row-cols-2 mx-auto">
+            <ItemDetail {...products} />
         </div>
     )
 }

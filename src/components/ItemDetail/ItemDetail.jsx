@@ -1,10 +1,11 @@
 import ItemCount from "../ItemCount/ItemCount"
+import "../Item/Item.css"
 const ItemDetail = (products) => {
     return (
 
         <div className="container" >
-            <article className="card text-center shadow-sm mb-1 rounded-3  bg-body " style={{ height: "90%" }} >
-                <header className="card-heade" >
+            <article className="card text-center shadow-sm my-5 rounded-3  bg-body  " style={{ height: "90%" }} >
+                <header className="fondoCeleste card-header " >
                     <h4 className="card-title mt-2"> {products.name}</h4>
                 </header>
                 <div className="card-body d-flex flex-column justify-content-between" style={{ height: "90%" }}>

@@ -17,7 +17,6 @@ function App() {
           <Route path="/item/:itemId" element={<ItemDetailContainer />} />
           <Route path="*" element={<h1>404 NOT FOUND</h1>}/> 
         </Routes>
-
       </BrowserRouter>
     </>
   )

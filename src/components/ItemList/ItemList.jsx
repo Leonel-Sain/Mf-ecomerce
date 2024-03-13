@@ -1,6 +1,6 @@
 import Item from "../Item/Item"
 const ItemList = ({products}) => {
-  console.log(products,"ssssaasdjasopdasd");
+
   return (
     
         <div className="row row-cols-2  " >

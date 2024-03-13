@@ -1,0 +1,10 @@
+.line{
+    background-image: linear-gradient(to right, transparent, #00bdd6, transparent);
+    padding-bottom: 0.1rem;
+    margin-bottom: 40px;
+}
+
+.BgItemListContainer{
+background: linear-gradient(to right, #80808000, #80808021, transparent); 
+
+}

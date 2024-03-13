@@ -12,6 +12,7 @@ const Item = ({ id, name, price, img, stock }) => {
                     <picture className="d-flex align-items-center" style={{ flex: "1 1 auto", overflow: "hidden" }}>
                         <img className="img-fluid" src={img} alt={name} />
                     </picture>
+                    <div>
                     <section className="card-text">
                         <p className="mb-0" > $ {price}</p>
                         <small className="text-muted">Stock Disponible: {stock}</small>
@@ -19,6 +20,8 @@ const Item = ({ id, name, price, img, stock }) => {
                     <footer>
                         <Link to={`/item/${id}`} className="Option  btn btn-primary mb-2"> Ver Detalles</Link>
                     </footer>
+                    </div>
+                 
                 </div>
             </article>
         </div>

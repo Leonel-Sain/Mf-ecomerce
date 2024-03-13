@@ -1,0 +1,6 @@
+.lineBanner{
+    background-image: linear-gradient(to right, transparent, #ffffff, transparent);
+    padding-bottom: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}

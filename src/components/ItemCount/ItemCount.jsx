@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { CartContext } from "../../context/CartContext"
 
-
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = ({initial=1, stock, onAdd }) => {
+  const value = useContext (CartContext)
   const [count, setCount] = useState(initial)
 
   const increment = () => {

@@ -125,7 +125,8 @@ const products = [
             "price": 7.29,
             "stock": 55,
             "img": ph.pic14,
-            "description": "Perfume para piso con diferentes"
+            "description": "Perfume para piso con diferentes",
+            "categoryId": "Quimicos"
         }
     
 ]
@@ -134,7 +135,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products);
-        }, 2500);
+        }, 1500);
     });
 };
 
@@ -142,7 +143,7 @@ export const getProductsById = (productsId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.find(prod => prod.id === productsId))
-        }, 500)
+        }, 200)
 
     })
 }
@@ -150,6 +151,6 @@ export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.filter(prod => prod.categoryId === categoryId));
-        }, 500);
+        }, 200);
     });
 };

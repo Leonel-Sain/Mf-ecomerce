@@ -15,3 +15,22 @@
     cursor: pointer;
   }
  
+  /* Footer.css */
+
+/* Estilo para la imagen del pie de página */
+.contentFooter{
+  text-align: center;
+}
+.hrFooter{
+  background-image: linear-gradient(to right, transparent, #ffffff, transparent);
+  padding-bottom: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.footerLine{
+  height: 30px;
+  background-image: linear-gradient(to right, transparent, #ffffff, transparent);
+  padding-top: 0%;
+  margin-top: 0;
+  margin-bottom: 0;
+}

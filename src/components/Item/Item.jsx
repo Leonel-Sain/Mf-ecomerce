@@ -4,7 +4,8 @@ const Item = ({ id, name, price, img, stock }) => {
 
     return (
         <div className="col-lg-3 ">
-            <article className="card text-center shadow-sm mb-1   bg-body " style={{ height: "90%" }} >
+            <article className="card text-center shadow-sm mb-3 bg-body article-card" style={{ height: "90%" }}>
+
                 <header className=" fondoCeleste  card-heade" >
                     <h4 className="card-title mt-2"> {name}</h4>
                 </header>

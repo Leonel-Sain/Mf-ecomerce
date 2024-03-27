@@ -1,0 +1,18 @@
+.down-1 {
+    color: black;
+    position: fixed;
+    bottom: 50%;
+    transform: rotate(90deg);
+    z-index: 10;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s ease-in; 
+    right: 10px;
+    text-decoration: none;
+}
+    .down-1:hover {
+      color: darkgrey; }
+    @media (max-width: 768px) {
+      .down-1 {
+        display: none; } }
+  

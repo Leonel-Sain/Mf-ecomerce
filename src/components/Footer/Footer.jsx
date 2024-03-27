@@ -5,16 +5,18 @@ import ImgFooter from './ImgFooter';
 
 const Footer = () => {
   return (
-    <footer className="ft py-0">
+    <footer className="ft py-0" id='footer'>
       <div className="container pt-4">
         <div className="row">
           <div className="col-lg-3 mb-2 contentFooter" >
-            <h3 className="text-light contentFooter">Sobre Nosotros <div className="hrFooter"> </div></h3>
-            <p className="text-dark pt-3 contentFooter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus est id nisi consectetur, ut sollicitudin sem pellentesque.</p>
+            <h3 className="text-light contentFooter">Nosotros <div className="hrFooter"> </div></h3>
+            <p className="text-dark pt-2 contentFooter"> 
+            Ofrecemos soluciones de limpieza de alta calidad.
+             Confía en nosotros para mantener tus espacios impecables y seguros.</p>
           </div>
           <div className="col-lg-3 mb-2 contentFooter" >
             <h3 className="text-light contentFooter">Contacto  <div className="hrFooter"> </div></h3>
-            <ul className="list-unstyled text-dark pt-3 contentFooter">
+            <ul className="list-unstyled text-dark pt-2 contentFooter">
               <li>Dirección: Calle Falsa 123, Ciudad Ficticia</li>
               <li>Teléfono: (123) 456-7890</li>
               <li>Email: info@miempresa.com</li>

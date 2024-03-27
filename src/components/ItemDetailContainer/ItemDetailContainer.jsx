@@ -9,7 +9,6 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true)
     const {itemId} = useParams()
     
-/*     console.log("parametros", itemId) */
     useEffect(() => {
         getDoc(doc(db,"products", itemId))
         .then((response) => {
@@ -22,24 +21,12 @@ const ItemDetailContainer = () => {
         .finally(() => {
             setLoading(false)
         })
-    /*     getProductsById(itemId)
-            .then(response => {
-                setProducts(response)
-                console.log(response);
-            })
-            
-            .catch(error => {
-                console.error(error)
-            })
-             */
+
     }, [itemId])
-  /*   if(loading) {
-        return <h1>Cargando...</h1>
-    } */
+
     return (
         <div className="container row row-cols-2 mx-auto">
             {loading ? <h1>Cargando...</h1> : <ItemDetail {...products} /> }
-            
         </div>
     )
 }

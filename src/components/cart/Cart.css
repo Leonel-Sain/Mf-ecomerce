@@ -1,0 +1,5 @@
+.lineCart{
+    background-image: linear-gradient(to right, transparent, #00bdd6, transparent);
+    padding-bottom: 0.1rem;
+    margin-bottom: 40px;
+}
